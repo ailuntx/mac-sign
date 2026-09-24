@@ -6,7 +6,7 @@ Publisher / 发布者: 沈阳霓虹星桥科技工作室（个人独资） / ail
 
 Website: https://www.ailuntz.com
 
-You may install and use the distributed AI Mac Sign plugin and its bundled
+You may install and use the distributed Mac Sign plugin and its bundled
 scripts for your own authorized workflows. This permission does not grant a
 general redistribution or sublicensing license. Other rights remain reserved
 unless separately granted.
@@ -36,4 +36,4 @@ excluded. You may stop using the plugin at any time by uninstalling it.
 
 Review the [privacy notice](privacy.md) before use.
 
-Support and updates: https://github.com/ailuntx/ai-mac-sign/issues
+Support and updates: https://github.com/ailuntx/mac-sign/issues

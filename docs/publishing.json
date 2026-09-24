@@ -1,13 +1,24 @@
 {
-  "name": "ai-mac-sign",
-  "displayName": "AI Mac Sign",
-  "version": "0.1.0",
-  "date": "2026-09-10",
-  "status": "Published",
-  "skillScan": "Passed",
-  "review": "Approved",
-  "directoryUrl": "https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a",
-  "sourceUrl": "https://github.com/ailuntx/ai-mac-sign",
-  "category": "Developer Tools",
-  "publisher": "沈阳霓虹星桥科技工作室（个人独资）"
+  "name": "mac-sign",
+  "displayName": "Mac Sign",
+  "developerName": "ailuntz",
+  "version": "0.2.0",
+  "status": "Prepared; public submission blocked",
+  "observedAt": "2026-09-24T22:01:10+00:00",
+  "reason": "The portal Create plugin menu offered only With MCP, while an upload to the existing skills-only listing rejected name mac-sign because it must remain ai-mac-sign.",
+  "packageSha256": "64de80049a8d3e545b47dbcb436805aa2817ac43b2f2956759115d97e12b5409",
+  "sourceUrl": "https://github.com/ailuntx/mac-sign",
+  "previousListing": {
+    "name": "ai-mac-sign",
+    "displayName": "AI Mac Sign",
+    "version": "0.1.0",
+    "date": "2026-09-10",
+    "status": "Published",
+    "skillScan": "Passed",
+    "review": "Approved",
+    "directoryUrl": "https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a",
+    "sourceUrl": "https://github.com/ailuntx/ai-mac-sign",
+    "category": "Developer Tools",
+    "publisher": "沈阳霓虹星桥科技工作室（个人独资）"
+  }
 }

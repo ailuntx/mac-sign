@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-SCRIPT = Path(__file__).resolve().parents[1] / 'plugins/ai-mac-sign/skills/mac-sign/scripts/mac_sign.py'
+SCRIPT = Path(__file__).resolve().parents[1] / 'plugins/mac-sign/skills/mac-sign/scripts/mac_sign.py'
 spec = importlib.util.spec_from_file_location('mac_sign', SCRIPT)
 m = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(m)
@@ -85,7 +85,7 @@ class SigningIntegrationTests(unittest.TestCase):
             cls.identity = m.select_identity(available)
         except m.SignError as exc:
             raise unittest.SkipTest(str(exc))
-        cls.tmp = tempfile.TemporaryDirectory(prefix='ai-mac-sign-tests-')
+        cls.tmp = tempfile.TemporaryDirectory(prefix='mac-sign-tests-')
         cls.root = Path(cls.tmp.name)
         cls.binary = cls.root / 'fixture-binary'
         source = cls.root / 'fixture.c'
@@ -137,7 +137,7 @@ class SigningIntegrationTests(unittest.TestCase):
             with self.assertRaises(m.SignError):
                 m.sign_app(app, app, self.identity)
         self.assertEqual((app / 'Contents/MacOS/Example').read_bytes(), original)
-        self.assertEqual(list(self.path.glob('.ai-mac-sign-*')), [])
+        self.assertEqual(list(self.path.glob('.mac-sign-*')), [])
 
     def test_nested_helper_and_entitlements_are_preserved(self):
         app = self.app()

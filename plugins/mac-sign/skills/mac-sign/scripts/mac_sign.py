@@ -56,7 +56,7 @@ def signature(app):
 
 
 def leaf_hash(app):
-    with tempfile.TemporaryDirectory(prefix='ai-mac-sign-cert-') as tmp:
+    with tempfile.TemporaryDirectory(prefix='mac-sign-cert-') as tmp:
         prefix = Path(tmp) / 'cert'
         run(['/usr/bin/codesign', '-d', '--extract-certificates=' + str(prefix), app])
         leaf = Path(str(prefix) + '0')
@@ -224,7 +224,7 @@ def sign_app(source, destination, identity, expected_id=None):
     previous_leaf = leaf_hash(baseline) if before and before['authorities'] else None
     keep_requirement = previous_leaf == identity['sha1']
     destination.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix='.ai-mac-sign-', dir=destination.parent) as tmp:
+    with tempfile.TemporaryDirectory(prefix='.mac-sign-', dir=destination.parent) as tmp:
         staged = Path(tmp) / source.name
         run(['/usr/bin/ditto', source, staged], timeout=180)
         targets = code_targets(staged)
@@ -244,7 +244,7 @@ def sign_app(source, destination, identity, expected_id=None):
         after = signature(staged)
         if leaf_hash(staged) != identity['sha1'] or after['Identifier'] != bundle_id:
             raise SignError('Signed identity or Bundle ID does not match requested identity.')
-        backup = destination.parent / ('.ai-mac-sign-old-' + uuid.uuid4().hex + '.app')
+        backup = destination.parent / ('.mac-sign-old-' + uuid.uuid4().hex + '.app')
         existed = destination.exists()
         if existed:
             destination.rename(backup)

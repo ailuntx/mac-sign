@@ -5,11 +5,11 @@ from pathlib import Path
 import zipfile
 
 root = Path(__file__).resolve().parents[1]
-plugin = root / 'plugins/ai-mac-sign'
+plugin = root / 'plugins/mac-sign'
 manifest = json.loads((plugin / '.codex-plugin/plugin.json').read_text())
 version = manifest['version'].split('+')[0]
 manifest['version'] = version
-out = root / 'dist' / f'ai-mac-sign-{version}.zip'
+out = root / 'dist' / f'mac-sign-{version}.zip'
 out.parent.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as archive:
     for path in sorted(plugin.rglob('*')):

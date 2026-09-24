@@ -1,10 +1,10 @@
-# AI Mac Sign
+# Mac Sign
 
 给本机 macOS 项目自动签名的 Codex 插件。支持当前项目、指定项目、指定 `.app` 和输出位置，复用系统钥匙串里的开发证书。无需 Python 第三方依赖。
 
-**[在 OpenAI 插件目录安装 AI Mac Sign](https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a)** · 已发布 0.1.0
+Mac Sign 0.2.0 已完成本机验证和打包，公开发布待 OpenAI 平台开放纯技能插件的新建入口。[旧版 0.1.0 目录页面](https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a)仍可访问。
 
-[隐私说明](docs/privacy.md) · [使用条款](docs/terms.md) · [支持与反馈](https://github.com/ailuntx/ai-mac-sign/issues)
+[隐私说明](docs/privacy.md) · [使用条款](docs/terms.md) · [支持与反馈](https://github.com/ailuntx/mac-sign/issues)
 
 安装后直接说：
 
@@ -14,7 +14,7 @@
 
 代理负责识别产物、选择已有证书、调用脚本并验证结果。常用项目以 `.ai-sign.json` 保存产物路径和构建命令；不必再让用户复制各项目的构建命令。首次缺少证书或钥匙串需要授权时仍需用户完成系统要求。
 
-源码位于 `plugins/ai-mac-sign`，技能入口是 [mac-sign](plugins/ai-mac-sign/skills/mac-sign/SKILL.md)。支持 Python 3.9+ 和 macOS 14+。自动选择 Apple Development；也可明确指定其他有效代码签名证书。适用于能访问本地 Mac 终端的 Codex，不是网页 ChatGPT 中直接运行的远程签名服务。
+源码位于 `plugins/mac-sign`，技能入口是 [mac-sign](plugins/mac-sign/skills/mac-sign/SKILL.md)。支持 Python 3.9+ 和 macOS 14+。自动选择 Apple Development；也可明确指定其他有效代码签名证书。适用于能访问本地 Mac 终端的 Codex，不是网页 ChatGPT 中直接运行的远程签名服务。
 
 已在 cap 和 minibridge 完成发现产物、首次签名、配置驱动重建、安装版签名身份连续性验证，详见 [实测记录](docs/validation.md)。个人市场安装后，新开对话即可加载技能。
 

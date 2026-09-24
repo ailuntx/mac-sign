@@ -1,6 +1,6 @@
 # Reviewer test cases
 
-AI Mac Sign runs on a local Mac with Python 3.9+ and an existing valid signing
+Mac Sign runs on a local Mac with Python 3.9+ and an existing valid signing
 identity. It has no remote MCP server, publisher account, demo login or API key.
 Use an identity already authorized in the reviewer's own Keychain; the plugin
 does not supply or export keys. On an environment without local macOS access it

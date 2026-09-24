@@ -6,7 +6,7 @@ Publisher / 发布者: 沈阳霓虹星桥科技工作室（个人独资） / ail
 
 Website: https://www.ailuntz.com
 
-AI Mac Sign is a local macOS signing plugin. It reads the selected project
+Mac Sign is a local macOS signing plugin. It reads the selected project
 configuration, App bundle metadata and code, and the list of valid signing
 identities exposed by the macOS security command. It invokes Apple's codesign
 tool to use an existing Keychain identity. It does not read or export private
@@ -41,6 +41,6 @@ user database to delete.
 名称中的账号邮箱；这些结果进入你使用的 AI 对话，适用该平台的数据政策。
 可选构建命令的文件与网络访问由项目本身决定。公开反馈前请删除个人信息。
 
-Support: https://github.com/ailuntx/ai-mac-sign/issues. Issues are public; never
+Support: https://github.com/ailuntx/mac-sign/issues. Issues are public; never
 post private keys, passwords, certificate exports containing private keys, or
 private project files.
