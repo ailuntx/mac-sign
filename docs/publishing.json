@@ -3,9 +3,9 @@
   "displayName": "Mac Sign",
   "developerName": "ailuntz",
   "version": "0.2.0",
-  "status": "Prepared; public submission blocked",
-  "observedAt": "2026-09-24T22:01:10+00:00",
-  "reason": "The portal Create plugin menu offered only With MCP, while an upload to the existing skills-only listing rejected name mac-sign because it must remain ai-mac-sign.",
+  "status": "Draft; skill scan in progress",
+  "observedAt": "2026-09-24T22:09:43+00:00",
+  "reason": "The portal requires the existing listing package name ai-mac-sign. The public display name is Mac Sign and developer name is ailuntz. The local source and installation identifier remain mac-sign.",
   "packageSha256": "64de80049a8d3e545b47dbcb436805aa2817ac43b2f2956759115d97e12b5409",
   "sourceUrl": "https://github.com/ailuntx/mac-sign",
   "previousListing": {
@@ -20,5 +20,11 @@
     "sourceUrl": "https://github.com/ailuntx/ai-mac-sign",
     "category": "Developer Tools",
     "publisher": "沈阳霓虹星桥科技工作室（个人独资）"
-  }
+  },
+  "submissionId": "appsub_6ab59edc04e48191b1170cc3d22093e7",
+  "pluginId": "plugins_6aa2994c60f08191ad89867e0ea1546a",
+  "submissionUrl": "https://platform.openai.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a/submissions/appsub_6ab59edc04e48191b1170cc3d22093e7",
+  "directoryUrl": "https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a",
+  "directoryPackageName": "ai-mac-sign",
+  "directoryPackageSha256": "bda2ef3c114e0b13aada91f3d873b4dbf56c541cc7749a24ea7d94eacbd5f8ce"
 }
