@@ -2,7 +2,9 @@
 
 给本机 macOS 项目自动签名的 Codex 插件。支持当前项目、指定项目、指定 `.app` 和输出位置，复用系统钥匙串里的开发证书。无需 Python 第三方依赖。
 
-Mac Sign 0.2.0 已完成本机验证，并上传到[原插件目录条目](https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a)作为新版本草稿；公开版须通过平台扫描、审核和发布。平台要求同一条目的内部标识保持 `ai-mac-sign`，因此目录包使用该兼容标识；本地插件源码和安装标识为 `mac-sign`。两种包的技能与签名脚本相同。
+**[在 OpenAI 插件目录安装 Mac Sign](https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a)** · 已发布 0.2.0
+
+平台要求同一公开条目的内部标识保持 `ai-mac-sign`，因此目录包使用该兼容标识；本地插件源码和安装标识为 `mac-sign`。两种包的技能与签名脚本相同。
 
 [隐私说明](docs/privacy.md) · [使用条款](docs/terms.md) · [支持与反馈](https://github.com/ailuntx/mac-sign/issues)
 
