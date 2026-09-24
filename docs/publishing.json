@@ -3,8 +3,8 @@
   "displayName": "Mac Sign",
   "developerName": "ailuntz",
   "version": "0.2.0",
-  "status": "Draft; skill scan in progress",
-  "observedAt": "2026-09-24T22:09:43+00:00",
+  "status": "Draft; scan passed; awaiting policy attestation",
+  "observedAt": "2026-09-24T22:16:06+00:00",
   "reason": "The portal requires the existing listing package name ai-mac-sign. The public display name is Mac Sign and developer name is ailuntz. The local source and installation identifier remain mac-sign.",
   "packageSha256": "64de80049a8d3e545b47dbcb436805aa2817ac43b2f2956759115d97e12b5409",
   "sourceUrl": "https://github.com/ailuntx/mac-sign",
@@ -26,5 +26,6 @@
   "submissionUrl": "https://platform.openai.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a/submissions/appsub_6ab59edc04e48191b1170cc3d22093e7",
   "directoryUrl": "https://chatgpt.com/plugins/plugins_6aa2994c60f08191ad89867e0ea1546a",
   "directoryPackageName": "ai-mac-sign",
-  "directoryPackageSha256": "bda2ef3c114e0b13aada91f3d873b4dbf56c541cc7749a24ea7d94eacbd5f8ce"
+  "directoryPackageSha256": "bda2ef3c114e0b13aada91f3d873b4dbf56c541cc7749a24ea7d94eacbd5f8ce",
+  "skillScan": "Passed"
 }
